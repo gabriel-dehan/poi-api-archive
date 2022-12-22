@@ -1,0 +1,437 @@
+fr:
+  sms:
+    invite: |
+      Hey %{receiver} ! C'est %{sender} ! Je suis sur Poi pour mesurer mon impact positif ! 😊
+      Télécharge l'app ici et rejoins-moi 👉 https://poi.app
+      Pssst : utilises mon code de parrainage pour obtenir bonus 👉 %{referral}
+    challenge: |
+      Hey %{receiver} ! C'est %{sender} ! Je suis sur Poi et je te challenge à mesurer ton impact positif !
+      Télécharge l'app ici et rejoins-moi 👉 https://poi.app
+      Pssst : utilises mon code de parrainage pour obtenir bonus 👉 %{referral}
+  notifications: 
+    new_app: 
+      title: "%{app} arrive sur Poi !"
+      content: "Rendez-vous sur Poi pour l'ajouter !"
+      modal_title: "%{app} arrive sur Poi !"
+      modal_content: "Connecte %{app} à Poi pour commencer à mesurer ton impact !"
+      button: "Fermer"
+    level_reached:
+      title: "🎉Tu as atteint le niveau %{level} 🎉"
+      content: "Félicitation, continue comme ça !"
+    level_reached_category:
+      title: "🎉Tu as atteint le niveau %{level} en %{category} 🎉"
+    challenge_received:
+      title: "%{challenger} te défie !"
+      content: "Relève le défi et gagne des POI 🔥"
+    challenge_accepted:
+      title: "%{challenged} a accepté ton défi !"
+      content: "Ton défi a été accepté, GAME ON ! 🔥"
+      modal_title: "%{challenged} a accepté ton défi !"
+      modal_content: "Ton défi a été accepté ! Vous gagnerez tous les deux %{reward} POI, si %{challenged} atteint l'objectif !"
+      button: "Fermer"
+    challenge_completed:
+      title: "%{challenged} a réussi ton défi !"
+      content: "Ton défi a été réussi 🔥"
+      modal_title: "%{challenged} a réussi ton défi !"
+      modal_content: "Ton défi a été réussi ! Vous gagnez tous deux %{reward} POI ! Bravo !"
+      button: "Fermer"
+    referee_signed_up:
+      title: "%{referee} s'est inscrit grâce à toi !"
+      content: "Pour te remercier, voici quelques POI 💕"
+      modal_title: "%{referee} rejoint l'aventure Poi !"
+      modal_content: "Tu doubles ton impact ! Et pour te remercier de faire grandir la communauté Poi, voici %{reward} POI. Continue comme ça !"
+      button: "Yay"
+    daily_digest:
+      title: "Tes gains d'aujourd'hui 🌱"
+      content: "Tu as gagné %{earned_today} POI aujourd'hui"
+      modal_title: "Bravo !"
+      modal_content: "Tu as gagné %{earned_today} POI aujourd'hui !"
+      button: "Fermer"
+  categories:
+    mobility: 
+      title: "Mobilité"
+      description: "Réduis ton bilan CO2 en choisissant des mobilités alternatives."
+      examples: 
+        - icon: 'blablacar'
+          title: "Covoiturage d'1 heure"
+          reward: 10
+        - icon: 'blablacar'
+          title: "Trajet de 50km"
+          reward: 10     
+        - icon: 'blablacar'
+          title: "Paris - Lille"
+          reward: 10   
+    consumption: 
+      title: "Consommation"
+      description: "Réduis ton bilan CO2 en consommant local et en réduisant le gaspillage."
+      examples: 
+        - icon: 'lrqdo'
+          title: Achète un panier de 10 euros"
+          reward: 10
+        - icon: 'toogoodtogo'
+          title: "Achète un panier de 10 euros"
+          reward: 10     
+        - icon: 'phenix'
+          title: "Achète un panier de 5 euros"
+          reward: 5  
+    recycling: 
+      title: "Recyclage"
+      description: "Poi t'aide à devenir un pro du tri."
+      examples: 
+        - icon: 'yoyo'
+          title: "Trier 1 sac de déchets"
+          reward: 10
+        - icon: 'yoyo'
+          title: "Ramasser 1kg de déchets"
+          reward: 10     
+        - icon: 'yoyo'
+          title: "Trier 1kg de déchets"
+          reward: 10   
+    citizenship: 
+      title: "Citoyenneté"
+      description: "Engage-toi pour ton territoire ou pour des associations."
+      examples: 
+        - icon: 'yoyo'
+          title: "Trier 1 sac de déchets"
+          reward: 10
+        - icon: 'yoyo'
+          title: "Ramasser 1kg de déchets"
+          reward: 10     
+        - icon: 'yoyo'
+          title: "Trier 1kg de déchets"
+          reward: 10   
+    investments: 
+      title: "Investissements"
+      description: "Place ton argent dans des projets d'intérêt général."
+      examples: 
+        - icon: 'blablacar'
+          title: "Covoiturage d'1 heure"
+          reward: 10
+        - icon: 'blablacar'
+          title: "Trajet de 50km"
+          reward: 10     
+        - icon: 'blablacar'
+          title: "Paris - Lille"
+          reward: 10
+    bonus: 
+      title: "Communauté"
+      description: "Contribues au développement de la communauté Poi."
+      actions: 
+        - title: "Ajoute une app"
+          event: 'application:connected'
+        - title: "Invite un ami"
+          event: 'referral:referree'
+        - title: "Défie un ami"
+          event: 'challenge'
+  events: 
+    referral:referrer: "Parrainé inscrit"
+    referral:referree: "Parrainage"
+    poi:share: "Partage"
+    onboarding:done: "Inscription"
+    onboarding:application: "Première app connectée"
+    application:connected: "App connectée"
+    challenge: "Défi réussi"
+    task: 
+      beta_tester: "Beta Testeur"
+      invite: "Parrainé inscrit"
+      bug_report: "Bug reporté"
+      blogging: "Blogging"
+      social_media: "Partage social"
+    action: 
+      categories: 
+        mobility: "Trajet effectué"
+        consumption: "Achat effectué"
+        recycling: "Tri effectué"
+        citizenship: "Action effectué"
+        investments: "Investissement"
+      applications:
+        lime: "Trajet effectué"
+        yoyo: "Sac de tri déposé"
+        phenix: "Panier sauvé"
+        toogoodtogo: "Panier sauvé"
+  tasks: 
+    beta_tester: 
+      name: "Beta Testeur"
+      description: "Tu fais parti des Beta Testeurs."
+    invite:
+      name: 'Invite tes amis'
+      description: 'Invite tes amis et engrange des POI !'
+    blogging:
+      name: 'Blog sur Poi'
+      description: 'Blog sur Poi et engrange des POI !'
+    social_media:
+      name: 'Partage Poi sur les réseaux sociaux'
+      description: 'Partage sur les réseaux sociaux et engrange des POI !'
+    bug_report:
+      name: 'Reporte des bugs'
+      description: 'Reporte des bugs et engrange des POI !'
+  challenges:
+    timeframes:
+      1_week: "1 semaine"
+    tips: 
+      mobility:
+        - "Faire un trajet"
+      consumption:
+        - "Sauver un panier"
+        - "Acheter en circuit-court"
+      recycling: 
+        - "Recycler mon plastique"
+      citizenship: 
+        - "Aider un sans-abri"
+        - "Faire un don gratuit"
+      investment: 
+        - "Faire un placement solidaire"
+  tos:
+    - title: "A venir"
+      content: 
+        - subtitle: "A venir"
+          paragraphs: 
+            - "A venir"
+            - "A venir"
+        - subtitle: "A venir"
+          paragraphs: 
+            - "A venir"
+            - "A venir"
+  faq:
+    - title: "Mon impact"
+      content: 
+        - subtitle: "Comment mesurez-vous mon impact ?"
+          paragraphs: 
+            - "Poi te suggère des services pour tes usages quotidiens et s'y connecte, avec ton autorisation. Chaque action que tu effectues avec ceux-ci correspond à un nombre de POI qui, cumulés, nous permettent de mesurer ton impact social et environnemental."
+        - subtitle: "Est-ce que c'est fiable ?"
+          paragraphs: 
+            - "Fini le déclaratif ! En s'appuyant sur les données émises par ton utilisation de nos services partenaires, Poi peut quantifier de manière automatisée, précise et fiable l'impact de tes actions."
+        - subtitle: "Comment fonctionne ma jauge d'impact ?"
+          paragraphs: 
+            - "La jauge d'impact fonctionne en deux temps :"
+            - "Des jauges thématiques te montrent le nombre de POI gagnés dans chaque catégorie et ceux qui te manquent pour passer au niveau suivant"
+            - "Une jauge principale regroupe les résultats des jauges thématiques et te donne ton impact global ainsi que ton expérience"
+        - subtitle: "A quoi correspond mon niveau ?"
+          paragraphs: 
+            - "Le niveau d'une jauge est le témoin de l'impact que tu as totalisé et par conséquent de ton expérience. L'avatar qui t'es attribué te montre ton niveau d'expérience générale dans la communauté."
+        - subtitle: "Comment puis-je savoir ce qui est fait de mes données ?"
+          paragraphs: 
+            - "Les données collectées via nos services partenaires sont strictement confidentielles et anonymisées, nous les utilisons  uniquement pour les convertir en données d'impact et te permettre de cumuler des POI. N'hésite pas à consulter notre Politique de confidentialité pour en savoir plus."
+    - title: "Le POI"
+      content: 
+        - subtitle: "Qu'est-ce que le POI ?"
+          paragraphs: 
+            - "Le POI est notre unité de mesure d'impact, la preuve tangible de ton impact positif sur la planète. Il sert à la fois à nourrir les différentes jauges sur l'application et de monnaie de récompense."
+        - subtitle: "Comment puis-je gagner des POI ?"
+          paragraphs: 
+            - "Chaque action effectuée via un service partenaire te fait gagner des POI, en accord avec notre grille de mesure d'impact."
+        - subtitle: "Que puis-je faire de mes POI ?"
+          paragraphs: 
+            - "Les POI te servent non seulement à avoir une mesure unique de ton impact sur les différents services que tu utilises, et également à obtenir des réductions exclusives auprès de partenaires."
+    - title: "Les services partenaires"
+      content:   
+        - subtitle: "Comment sont sélectionnées les services proposées dans Poi App ?"
+          paragraphs: 
+            - "Pour intégrer Poi, les services partenaires doivent:"
+            - "- participer à développer un comportement positif"
+            - "- disposer d'une API permettant de collecter des données fiables"
+        - subtitle: "Puis-je proposer un service qui n'est pas référencé dans Poi App ?"
+          paragraphs: 
+            - "Oui, tu peux voter pour des services que tu souhaites voir sur Poi directement dans l'application, via une liste de suggestions et un champ libre pour nous indiquer tes services préférés."
+        - subtitle: "Si j'ai un problème avec un service partenaire, dois-je passer par Poi App pour le signaler ?"
+          paragraphs: 
+            - "Poi ne peut être tenu responsable d'un dysfonctionnement chez un partenaire et donc ne doit pas être contacté directement à ce sujet. Tu peux néanmoins nous indiquer si cela a eu des conséquences sur notre service (mesure, attribution de POI, etc)."
+    - title: "La communauté"
+      content:   
+        - subtitle: "Comment inviter un ami dans Poi App ?"
+          paragraphs: 
+            - C'est très simple. Via ta page profil, clique sur l'onglet "Mes Amis" et laisse-toi guider, on t'assure la mesure d'impact c'est mieux quand on est plus nombreux !
+        - subtitle: "Comment fonctionnent les défis ?"
+          paragraphs: 
+            - "Quand tu passes un niveau dans une jauge thématique, tu peux défier un ami sur le même critère et vous gagnerez des POI tous les deux s'il le remporte."
+        - subtitle: "Quel est le but des défis ?"
+          paragraphs: 
+            - "Les défis te permettent de partager ton expérience et d'impliquer tes amis. Et parce que plus on est de fous, plus on a d'impact, vous gagnez tous les deux des POI lorsqu'un de tes amis réussi un défi que tu as lancé."
+        - subtitle: "Puis-je refuser un défi ?"
+          paragraphs: 
+            - "Bien entendu ! Même si on t'a connu plus audacieux ;)"
+  applications: 
+    blablacar: 
+      tagline: "Le leader mondial du covoiturage"
+      poi_earn_tagline: "Covoiture pour gagner des POI !"
+      requested_permissions: 
+        - Accéder aux trajets que tu partages
+        - Te récompenser en fonction de ton usage
+      description: | 
+        Découvrez le moyen de transport du futur ! Transformez-vous en copilote et partez au plus près de votre adresse de départ. Et si c’est vous qui conduisez, préparez-vous à réaliser de sacrées économies !
+        Tirer ses bagages jusqu'à l'arrêt de bus, attendre sa correspondance, casser sa tirelire pour s'offrir un week-end... C'est fini !
+
+        Combien d’autres personnes ont prévu de se rendre où vous allez ? Grâce à BlaBlaCar, vous trouvez quelqu’un avec qui partager votre trajet ! Comme ça, vous gagnez tous les deux du temps et de l’argent pour ce qui vous attend à l’arrivée.
+
+        Vous bénéficiez gratuitement de garanties additionnelles, en plus de l'assurance auto du conducteur, en partenariat avec AXA.
+
+        Vous prenez le volant ?
+        Publiez. Partez. Économisez.
+        • Publiez votre trajet en quelques secondes
+        • Choisissez qui vous emmenez avec vous
+        • Économisez sur les coûts du trajet
+
+        On vous attend quelque part ?
+        Réservez. Embarquez. Voyagez.
+        • Cherchez parmi les trajets rejoignant votre destination
+        • Comparez les points de départ, l'un de ces trajets pourrait partir du coin de la rue
+        • Réservez automatiquement ou faites une demande de réservation
+        • Arrivez au plus près de votre destination finale
+    lrqdo:
+      tagline: "Achat en direct des producteurs"
+      poi_earn_tagline: "Achète en direct des producteurs pour gagner des POI !"
+      requested_permissions: 
+        - Accéder à tes achats locaux
+        - Te récompenser en fonction de ton usage
+      description: |
+        Une Ruche, c'est un groupe d'amis, de voisins, qui passent commande directement aux agriculteurs et aux artisans de la région.
+
+        Commander ce que vous voulez, quand vous le voulez : fruits, légumes, pain, fromage, viande, boissons… Sans obligation de fréquence et de contenu pour votre panier. Chaque semaine, la Ruche vous donne rendez-vous dans un lieu fixe: venez retirer votre commande et rencontrer les producteurs lors d’un marché éphémère.
+
+        Comment ça marche ?
+        • Rejoignez une Ruche près de chez vous
+        • Choisissez vos produits et commandez
+        • Affichez votre bon de commande directement sur votre téléphone pendant la distribution
+    phenix:
+      tagline: "Phenix, l'anti-gaspi sans souci"
+      poi_earn_tagline: "Sauve des paniers pour gagner des POI !"
+      requested_permissions: 
+        - Accéder aux paniers que tu sauves
+        - Te récompenser en fonction de ton usage
+      description: |
+        Vous souhaitez consommer de bons produits à des prix bon plan ? Vous voulez agir concrètement contre le gaspillage ?
+        Alors rejoignez la communauté Phenix en téléchargeant notre application, et réduisez ainsi le gaspillage chez vos commerçants de quartier.
+        Dans un premier temps, Phenix n'est disponible qu'en Île-de-France, mais s'étendra très vite au reste de la France !
+
+        Pourquoi rejoindre la communauté Phenix ?
+
+        • Pour accéder à des produits au top, à petit prix
+        Un panier Phenix c'est des invendus en moins, et un prix cadeau pour vous : des produits pas chers, et bons !
+
+        • Pour un petit plaisir quotidien, à côté de chez vous
+        Acheter un panier antigaspi sur l'application Phenix, c'est s'engager contre le gaspillage, sans se ruiner et sans changer ses habitudes.
+
+        • Car toutes les petites actions comptent !
+        Et parce que consommer responsable, c'est pas forcément plus cher ou contraignant, on vous donnera aussi des tas d'astuces pour voir la vie en vert !
+
+        • Une initiative de la startup française PHENIX. Chez PHENIX, nous accompagnons depuis 4 ans les pros de la distribution dans la lutte contre le gaspillage, en sauvant plus de 50T de nourriture par jour ! Avec l'appli Phenix, nous embarquons aussi les petits commerces dans l'aventure anti-gaspillage.
+    toogoodtogo: 
+      tagline: "L'appli pour un monde sans gaspi(llage)"
+      poi_earn_tagline: "Sauve des paniers pour gagner des POI !"
+      requested_permissions: 
+         - Accéder aux paniers que tu sauves
+         - Te récompenser en fonction de ton usage
+      description: |
+        Chaque année, 1/3 de la production mondiale de nourriture est jetée. Too Good To Go permet à chacun d’entre nous de s’engager contre le gaspillage alimentaire afin de donner l’opportunité à toute nourriture produite d’atteindre sa destinée : être mangée.
+
+        Grâce à Too Good To Go, des millions de repas ont déjà été sauvés !
+        Tu aimes la bonne nourriture, les bons plans, tu es curieux et heureux de t’engager pour une bonne cause ? Pas de doute, l’application est faite pour toi !
+        Comment ça marche ?
+
+        Choisis, récupère, régale-toi ! C’est aussi simple que ça ;)
+        1) Trouve un commerçant près de chez toi et commande via l’application
+        2) Va chercher ton panier surprise directement chez le commerçant choisi
+        3) Régale-toi de ce que tu viens de récupérer
+        Et voilà, tu viens de faire un geste pour la planète !
+
+        Ajoute tes commerçants préférés en favori, et ne rate aucune occasion de les aider à sauver leurs invendus de la poubelle !
+
+        Tu aimes parcourir ta ville et découvrir de nouvelles choses ? Grâce à la carte de l’application, tu peux voir tous les établissements qui régaleront tes papilles… tout en agissant pour l’environnement !
+
+        Ensemble, nous pouvons facilement aider nos commerçants à réduire leur gaspillage alimentaire. Alors n’hésite plus et rejoins le mouvement anti-gaspi !
+    yoyo: 
+      tagline: "Vous triez. Nous recyclons & récompensons"
+      poi_earn_tagline: "Tri avec Yoyo pour gagner des POI !"
+      requested_permissions: 
+         - Accéder à ton historique de tri
+         - Te récompenser en fonction de ton usage
+      description: |
+        Rejoignez la communauté Yoyo près de chez vous ! Ensemble, vous déposerez vos bouteilles en plastique chez le Coach de votre quartier.
+
+        Là, toutes les semaines, Yoyo les récupère et leur offre une seconde vie. C’est garanti : elles seront toutes recyclées, en France et à 100% !
+
+        Ce n’est pas tout ! Cette bonne action donne droit à des places de cinéma, des billets pour un match de foot, des réductions sur vos abonnements de transport, et plein d’autres choses encore !
+    goodeed: 
+      tagline: "Le don gratuit"
+      poi_earn_tagline: "Fais des dons gratuits pour gagner des POI !"
+      requested_permissions: 
+        - Accéder à tes dons sur Goodeed
+        - Te récompenser pour ton usage
+      description: |
+        Goodeed te permet de financer des projets d’associations ultra-rapidement, simplement, en toute transparence et gratuitement !
+
+        Goodeed permet aussi de découvrir des projets solidaires et environnementaux :
+        1. Téléchargez l’application
+        2. Découvrez les projets
+        3. Regardez des pubs
+
+        Rejoignez une communauté de super-héros et contribuez à rendre le monde meilleur à votre échelle ! Vous pourrez découvrir de multiples projets touchant différentes causes : éducation, urgence, santé, environnement, planète, animaux, alimentation, etc…
+
+        Des projets pris en charge par nos 70 associations partenaires : l'Unicef, le Programme Alimentaire Mondial, WeForest, Handicap International, Vision du Monde, Bibliothèques Sans Frontières…
+    dreamact: 
+      tagline: "La e-boutique de la consommation responsable"
+      poi_earn_tagline: "Consomme responsable pour gagner des POI !"
+      requested_permissions: 
+        - Accéder à tes achats sur DreamAct
+        - Te récompenser pour ton usage
+      description: |
+        Comme 84% des Français, tu en as assez de te vêtir de vêtements « made in très loin », d'utiliser des produits de beauté et d'hygiène à la longue liste d’ingrédients écrite en latin et de remplir ton appartement d’objets dont la durée de vie est toujours plus courte ? 
+
+        Tu risques d'adorer Dream Act, le site internet qui aide les citoyens à consommer de manière plus responsable au quotidien !
+
+        Comment ça marche ?
+        Grâce à un city-guide de bonnes adresses, une e-boutique de produits sélectionnés et classés par catégorie d'impact (vegan, zéro-waste, commerce équitable etc) et un webzine d'information, tu trouveras sur la plateforme toutes les clefs pour avoir une consommation respectueuse de tes valeurs. 
+
+        Leur engagement  
+        Expliquer concrètement et en toute transparence d’où viennent les produits que nous consommons et dans quelles conditions ils ont été fabriqués.
+
+        Pour cela, aidés d'un Comité éthique indépendant, ils sélectionnent et décryptent les produits et services qui oeuvrent – dans leur processus de production ou grâce à leurs bénéfices – pour le commerce local, les circuit-courts, la réinsertion, le commerce équitable, l’éducation, la santé, le lien social et l’environnement. 
+    lilo: 
+      tagline: "Le moteur de recherche français et solidaire"
+      poi_earn_tagline: "Fais tes recherches internet sur Lilo pour gagner des POI !"
+      requested_permissions: 
+        - Accéder à tes recherches sur Lilo
+        - Te récompenser en fonction de ton usage
+      description: |
+        Comment donner de l'impact à la plus petite de tes actions quotidienne ? En utilisant Lilo ! 
+
+        Grâce à ce moteur de recherche, tu agis gratuitement pour changer les choses simplement en effectuant tes recherches quotidiennes sur internet.
+
+        Si tu n'est pas encore convaincu.e, découvre trois bonnes raisons de passer à Lilo dès aujourd'hui : 
+
+        1. Il soutient tes projets préférés
+        50% des revenus publicitaires du moteur de recherche sont reversés à de beaux projets sociaux et environnementaux, et tu peux même choisir lesquels.
+
+        2. Il est made in France, et respecte ta vie privée
+        Tu ne laisses pas tes données aux mains de n'importe qui ? Ça tombe bien, le moteur de recherche Lilo ne collecte pas tes données personnelles et agit même contre le tracking publicitaire.
+
+        3. Une recherche = une goutte d'eau à dédier à un projet
+        Chaque recherche que tu fais avec Lilo te fait gagner une goutte d'eau. Tu peux ensuite choisir à quel projet tu donnes tes gouttes d'eau. Chaque goutte d'eau compte !
+  activerecord:
+    models:
+      invite: "Invitation"
+    attributes:
+      invite:
+        phone_number: "Numéro de téléphone"
+  errors:
+    params: 
+      missing: "Le paramètre %{param_name} est manquant."
+      invalid: "Le paramètre %{param_name} est invalide."
+    registration:
+      wrong_referral_code: "Votre code de parrainage est incorrect."
+    users:
+      friends:
+        befriend_self: "Tu ne peux pas devenir ami avec toi même !"
+    challenges: 
+      exists: "Un défi entre ces deux utilisateurs existe déjà."
+    perks:
+      already_available: "Ce bon est déjà disponible et n'a pas encore été utilisé."
+      insufficient_funds: "Tu n'as pas assez de POI dans ton portefeuille."
+    fundings:
+      insufficient_funds: "Tu n'as pas assez de POI dans ton portefeuille."
+    applications: 
+      not_found: "L'application ayant pour id: %{id}, n'existe pas."
+      auth: 
+        failure: "Vos identifiants semblent incorrects. Êtes-vous sûr que vous ne vous êtes pas connecté via Facebook, Twitter ou Google ?"
+      votes: 
+        not_found: "Impossible de trouver un vote à retirer pour l'application %{id}."
